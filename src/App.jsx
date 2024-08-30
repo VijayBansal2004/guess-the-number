@@ -99,7 +99,7 @@ function App() {
 
           {attemptsLeft === 0 ? (
             <div>
-              <p style={{ color: "red", fontSize: "2rem" }}>Game Over!</p>
+              <p style={{ color: "red", fontSize: "2rem",textAlign: "center" }}>Game Over!</p>
               <ResetButton handleRestart={handleRestart} />
             </div>
           ) : (

@@ -7,6 +7,8 @@ body {
     background-color: #ffffff1f;
     padding: 65px 45px;
     border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
 }
 .heading{
     padding-bottom: 15px;
@@ -26,12 +28,34 @@ body {
     height: 40px;
     font-size: 17px;
     color: white;
-    width: 75%;
+    width: 100%;
     padding-left: 10px;
 }
 
 .enter-button{
     width: 20% !important;
+    height: 100%;
+}
+
+.attempts-left{
+    color: #ffffffa1;
+    margin-top: 10px;
+}
+
+@media(max-width:575px){
+    .user-input-number {
+        height: auto;
+        font-size: 16px;
+        width: 100%;
+        padding: 10px;
+    }
+    .enter-button{
+        margin: auto;
+        width: 100% !important;
+    }
+    .background-container {
+        border-radius: 10px;
+    }
 }
 
 @media(max-width:440px) {
@@ -41,6 +65,9 @@ body {
     .hardness-menu-responsive{
         font-size: 12px !important;
         align-content: center !important;
+    }
+    .guess-the-number{
+        font-size: 20px;
     }
 }
 
