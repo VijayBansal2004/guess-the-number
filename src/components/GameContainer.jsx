@@ -21,8 +21,8 @@ const GameContainer = ({
     <>
       {startGame === true && (
         <div className="container align-content-center ">
-          <RangeDisplay range={range} />
           <HardnessDisplay levels={levels} />
+          <RangeDisplay range={range} />
           <InputNumber
             number={number}
             setNumber={setNumber}

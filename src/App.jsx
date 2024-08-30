@@ -86,32 +86,36 @@ function App() {
   return (
     <>
       <div className="container align-content-center col-12 col-lg-6 vh-100">
-        <Heading />
-        <HardnessLevel startGame={startGame} setLevels={setLevels} />
-        <StartButton
-          levels={levels}
-          startGame={startGame}
-          handleStart={handleStart}
-        />
-
-        {attemptsLeft === 0 ? (
-          <div>
-            <p style={{ color: "red", fontSize: "2rem" }}>Game Over!</p>
-            <ResetButton handleRestart={handleRestart} />
+        <div className="background-container">
+          <Heading />
+          <div className="start-game-container d-grid place-content-center">
+            <HardnessLevel startGame={startGame} setLevels={setLevels} />
+            <StartButton
+              levels={levels}
+              startGame={startGame}
+              handleStart={handleStart}
+            />
           </div>
-        ) : (
-          <GameContainer
-            range={range}
-            levels={levels}
-            number={number}
-            setNumber={setNumber}
-            startGame={startGame}
-            handleSubmit={handleSubmit}
-            previousGuesses={previousGuesses}
-            attemptsLeft={attemptsLeft}
-            handleRestart={handleRestart}
-          />
-        )}
+
+          {attemptsLeft === 0 ? (
+            <div>
+              <p style={{ color: "red", fontSize: "2rem" }}>Game Over!</p>
+              <ResetButton handleRestart={handleRestart} />
+            </div>
+          ) : (
+            <GameContainer
+              range={range}
+              levels={levels}
+              number={number}
+              setNumber={setNumber}
+              startGame={startGame}
+              handleSubmit={handleSubmit}
+              previousGuesses={previousGuesses}
+              attemptsLeft={attemptsLeft}
+              handleRestart={handleRestart}
+            />
+          )}
+        </div>
       </div>
     </>
   );

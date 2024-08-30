@@ -5,7 +5,7 @@ const HardnessLevel = ({ startGame, setLevels }) => {
     <>
       {startGame === false && (
         <div
-          className="btn-group"
+          className="btn-group mb-3"
           role="group"
           aria-label="Basic radio toggle button group">
           <input
@@ -17,7 +17,7 @@ const HardnessLevel = ({ startGame, setLevels }) => {
             autoComplete="off"
             onClick={(e) => setLevels(e.target.value)}
           />
-          <label className="btn btn-outline-primary" htmlFor="btnradio1">
+          <label className="btn btn-outline-primary hardness-menu-responsive" htmlFor="btnradio1">
             Easy Level
           </label>
 
@@ -30,7 +30,7 @@ const HardnessLevel = ({ startGame, setLevels }) => {
             autoComplete="off"
             onClick={(e) => setLevels(e.target.value)}
           />
-          <label className="btn btn-outline-primary" htmlFor="btnradio2">
+          <label className="btn btn-outline-primary hardness-menu-responsive" htmlFor="btnradio2">
             Medium Level
           </label>
 
@@ -43,7 +43,7 @@ const HardnessLevel = ({ startGame, setLevels }) => {
             autoComplete="off"
             onClick={(e) => setLevels(e.target.value)}
           />
-          <label className="btn btn-outline-primary" htmlFor="btnradio3">
+          <label className="btn btn-outline-primary hardness-menu-responsive" htmlFor="btnradio3">
             Hard Level
           </label>
         </div>

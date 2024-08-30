@@ -6,7 +6,7 @@ const StartButton = ({ levels, startGame, handleStart }) => {
       {startGame === false && (
         <button
           type="button"
-          className={`btn btn-primary mx-3 ${levels == null && "disabled"}`}
+          className={`btn btn-primary ${levels == null && "disabled"}`}
           onClick={(e) => handleStart(e)}>
           Start Game
         </button>

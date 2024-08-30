@@ -6,7 +6,7 @@ const InputNumber = ({ number, setNumber, handleSubmit }) => {
       <div className="col-12">
         <input
           type="number"
-          className={`w-50`}
+          className="user-input-number"
           placeholder="Enter your guess"
           min={1}
           value={number}
@@ -14,7 +14,7 @@ const InputNumber = ({ number, setNumber, handleSubmit }) => {
         />
         <button
           type="submit"
-          className={`btn btn-success mx-2 w-25 ${
+          className={`btn btn-success mx-2 enter-button ${
             number == null && "disabled"
           }`}
           onClick={(e) => handleSubmit(e)}>

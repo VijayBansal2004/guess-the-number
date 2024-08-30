@@ -1,0 +1,51 @@
+body {
+    background-color: black !important;
+    color: white !important;
+}
+
+.background-container {
+    background-color: #ffffff1f;
+    padding: 65px 45px;
+    border-radius: 20px;
+}
+.heading{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff38;
+}
+.start-game-container{
+    margin-top: 30px;
+}
+.hardness-level{
+    font-size: 17px;
+    color: #ffffffa1;
+}
+.user-input-number{
+    background-color: #ffffff24;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    width: 75%;
+    padding-left: 10px;
+}
+
+.enter-button{
+    width: 20% !important;
+}
+
+@media(max-width:440px) {
+    .background-container {
+        padding: 50px 15px;
+    }
+    .hardness-menu-responsive{
+        font-size: 12px !important;
+        align-content: center !important;
+    }
+}
+
+@media(max-width:380px) {
+    .background-container {
+        padding: 35px 10px;
+    }
+}
